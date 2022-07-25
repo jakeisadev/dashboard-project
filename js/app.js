@@ -1,0 +1,1 @@
+document.getElementById('alert').innerHTML = 'Alert: You have unread messages';

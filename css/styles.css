@@ -63,7 +63,7 @@ header {
     border-radius: 50%;
     width: 55px;
     height: 55px;
-    padding: 0 .7rem 0 1rem;
+    padding: 0 .5rem 0 1rem;
 }
 
 .header-txt-space {
@@ -76,6 +76,7 @@ header {
     display: none;
 }
 /* End Header CSS */
+
 /* Nav CSS */
 nav {
   display: flex;
@@ -92,3 +93,58 @@ nav a {
   fill: white;
 }
 /* End Nav CSS */
+
+/* Dashboard CSS */
+.dashboard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dashboard-search {
+  height: 50%;
+  flex-basis: 100%;
+  text-align: end;
+  background-color: #f1f0f0;
+  padding: 15px;
+  border-bottom-left-radius: 5px;
+}
+
+.dashboard-title {
+  margin: 15px;
+}
+
+#search {
+  padding: 5px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+/* End Dashboard CSS */
+
+/* Alert CSS */
+.alert-window {
+  position: relative;
+  background-color: #7279C0;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.alert-window p {
+  width: 90%;
+  color: #fff
+}
+
+.alert-close {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  margin: auto 10px;
+  cursor: pointer;
+}
+/* End Alert CSS */

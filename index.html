@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="normalize/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Web Dashboard</title>
@@ -29,7 +32,7 @@
                     <li>Your password expiries in 5 days<span class="close-bell-message">&#10006;</span></li>
                 </ul>
             </div>
-                <img src="images/member-1.jpg" class="header-img-circle" alt="image of member 1">
+                <img src="images/jacob-starowicz.jpeg" class="header-img-circle" alt="image of member 1">
                 <p class="header-txt-space">Jacob Starowicz</p>
         </div>
     </div>
@@ -61,5 +64,19 @@
         </a>
     </nav>
     <!-- End Nav -->
+    <main class="grid-main">
+        <!-- Header Dashboard -->
+        <div class="dashboard">
+            <h2 class="dashboard-title">Dashboard</h2>
+            <div class="dashboard-search">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+        </div>
+        <!-- Alert Window -->
+        <div class="alert-window" id="alert">
+         
+        </div>
+    </main>
+    <script src="js/app.js"></script>
 </body>
 </html>
