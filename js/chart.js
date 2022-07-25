@@ -54,3 +54,4 @@ let trafficOptions = {
     data: trafficData,
     options: trafficOptions
   });
+  
