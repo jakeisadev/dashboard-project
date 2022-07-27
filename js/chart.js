@@ -176,3 +176,83 @@ let trafficOptions = {
     }
   });
   //End Traffic Widget
+  //Daily Traffic Widget
+const dailyWidget = document.querySelector("#daily-chart");
+
+let dailyData = {
+  labels: ["S", "M", "T", "W", "T", "F", "S"],
+  datasets: [
+    {
+      data: [100, 50, 200, 120, 170, 70, 245],
+      backgroundColor: [
+        "#7279C0",
+        "#7279C0",
+        "#7279C0",
+        "#7279C0",
+        "#7279C0",
+        "#7279C0",
+        "#7279C0"
+      ],
+      borderWidth: 1
+    }
+  ]
+};
+
+let dailyOptions = {
+  scales: {
+    yAxes: [
+      {
+        ticks: {
+          beginAtZero: true
+        }
+      }
+    ]
+  },
+  legend: {
+    display: false
+  }
+};
+
+let dailyChart = new Chart(dailyWidget, {
+  type: "bar",
+  data: dailyData,
+  options: dailyOptions
+});
+//End Daily Traffic Widget
+
+//mobile widget
+const mobileWidget = document.querySelector("#mobile-users-chart");
+
+let mobileData = {
+  labels: ["Phones", "Tablets", "Desktop"],
+  datasets: [
+    {
+      data: [100, 50, 200],
+      backgroundColor: [
+        "#7DCD8A",
+        "#6AB2B9",
+        "#7279C0"
+      ],
+      borderWidth: 0
+    }
+  ]
+};
+
+let mobileOptions = {
+  legend: {
+    display: true,
+    position: "right",
+
+    labels: {
+      boxWidth: 20,
+      fontSize: 15,
+      precision: 2
+    }
+  }
+};
+
+let mobileChart = new Chart(mobileWidget, {
+  type: "doughnut",
+  data: mobileData,
+  options: mobileOptions
+});

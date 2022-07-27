@@ -1,1 +1,1 @@
-document.getElementById('alert').innerHTML = 'Alert: You have unread messages';
+document.getElementById('alert').innerHTML = '<span><strong>Alert</strong>: You have unread messages</span>';
