@@ -1,4 +1,4 @@
-/* grid */
+/* Begin Main Grid CSS*/
 .grid-container {
   display: grid;
   margin: 0 auto;
@@ -31,6 +31,8 @@ main {
 ul {
   list-style-type: none;
 }
+/* End Main Grid CSS */
+
 /* Header CSS */
 header {
     background-color: #7477bf;
@@ -193,3 +195,118 @@ nav a {
   background-color: #7DCD8A;
 }
 /* End Buttons Traffic CSS*/
+
+/* Begin Socials CSS */
+.social-container-twitter,
+.social-container-facebook,
+.social-container-google {
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  margin: 15px auto;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.socials-icon {
+  margin: auto;
+  transition: all .5s;
+}
+
+.socials-icon:hover {
+  transform: scale(1.1);
+}
+
+.facebook {
+  width: 55px;
+  height: 55px;
+}
+
+.twitter,
+.google {
+  width: 35px;
+  height: 35px;
+}
+
+.social-image-twitter,
+.social-image-google,
+.social-image-facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #7279C0;
+  width: 70px;
+  height: 70px;
+  margin-left: 4em;
+  margin-bottom: 1em;
+}
+
+.social-text {
+  margin-left: 15px;
+ 
+}
+
+.name-social {
+  font-weight: bold;
+  color: #7279C0;
+}
+
+.number-social {
+  font-size: 2em;
+}
+
+.name-social,
+.number-social {
+  letter-spacing: 0.1em;
+}
+/* End Socials CSS */
+
+/* Begin Members CSS */
+.members img,
+.recent-activity img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin: auto;
+}
+
+.members-container,
+.activity-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.members-container a {
+  font-size: 0.8em;
+}
+
+.members-date {
+  text-align: center;
+  margin: auto;
+  padding-top: .5em;
+}
+
+.activity-container {
+  position: relative;
+}
+
+.activity-text {
+  width: 90%;
+}
+
+.arrow {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  margin-right: 10px;
+  color: #7279C0;
+  font-weight: bold;
+}
+/* End Members CSS */
