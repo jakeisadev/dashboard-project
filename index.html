@@ -235,6 +235,67 @@
                </div>
             </div>
          </section>
+         <section class="message-user">
+            <h3 class="message-title">Message User</h3>
+            <div class="message-container">
+               <form class="message-user-form" id="sub" action="#send" method="POST" autocomplete="off">
+                  <input type="text" placeholder="Search for user" class="message-input input-msg" id="input-search">
+                  <div class="autocomplete-results"></div>
+                  <div class="error-input-message"></div>
+                  <textarea placeholder="Message for user" class="form-text" id="messageText"></textarea>
+                  <div class="error-form-text"></div>
+                  <button class="send-button" id="send">Send</button>
+               </form>
+            </div>
+         </section>
+         <!-- End Message User Section -->
+         <!-- Settings Section -->
+         <section class="settings">
+            <h3 class="settings-title">Settings</h3>
+            <!-- CSS Toggle -->
+            <div class="settings-container">
+               <div class="toggle-container">
+                  <span class="toggle-title">Send Email Notification </span>
+                  <div class="toggle toggle-first">
+                     <label class="switch">
+                        <input type="checkbox" id="tog-btn">
+                        <span class="slider round">
+                           <!--ADDED HTML -->
+                           <span class="on">ON</span>
+                           <span class="off">OFF</span>
+                           <!--END-->
+                        </span>
+                     </label>
+                  </div>
+               </div>
+               <div class="toggle-container">
+                  <span class="toggle-title">Set Profile To Public</span>
+                  <div class="toggle toggle-second">
+                     <label class="switch">
+                        <input type="checkbox" id="tog-btn2">
+                        <span class="slider round">
+                           <!--ADDED HTML --><span class="on">ON</span><span class="off">OFF</span>
+                           <!--END-->
+                        </span>
+                     </label>
+                  </div>
+               </div>
+               <!--End CSS Toggle -->
+               <select name="timezone" id="timezone">
+                  <option value="" disabled selected>Select a Timezone</option>
+                  <option value="-10:00">(GMT -10:00) Hawaii</option>
+                  <option value="-09:00">(GMT -9:00) Alaska</option>
+                  <option value="-08:00">(GMT -8:00) Pacific Time (US)</option>
+                  <option value="-07:00">(GMT -7:00) Mountain Time (US)</option>
+                  <option value="-06:00">(GMT -6:00) Central Time (US)</option>
+                  <option value="-05:00">(GMT -5:00) Eastern Time (US)</option>
+               </select>
+               <div class="timezone-btn">
+                  <button class="save-btn" id="save">Save</button>
+                  <button class="cancel-btn" id="cancel">Cancel</button>
+               </div>
+            </div>
+         </section>
          <!-- End Recent Activity Section -->
          </div>
       </main>
