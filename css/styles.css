@@ -525,10 +525,11 @@ input:checked + .slider .off {
 .buttons-traffic-list {
   padding-left: 0;
 }
-@media (min-width: 376px) {
+@media (min-width: 320px) {
   .popup-container {
     position: absolute;
     top: 1%;
+    right: 30%;
   }
   .close-bell-message {
     position: absolute;
@@ -542,7 +543,7 @@ input:checked + .slider .off {
   }
 }
 /*Tablet*/
-@media (min-width: 766px) {
+@media (min-width: 768px) {
   .buttons-traffic {
       flex-direction: row;
       justify-content: space-between;
@@ -620,7 +621,7 @@ input:checked + .slider .off {
 }
 }
 /*desktop*/
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   section.members, section.recent-activity {
       width: 48%;
  }
