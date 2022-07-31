@@ -4,36 +4,28 @@
   margin: 0 auto;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main";
+  grid-template-areas: "header" "nav" "main";
 }
-
 .grid-main {
   display: grid;
   grid-template-rows: auto;
 }
-
 header {
   grid-area: header;
 }
-
 nav {
   grid-area: nav;
 }
-
 main {
   grid-area: main;
 }
-
-
 ul {
   list-style-type: none;
 }
-
+section {
+  margin-top: 1em;
+}
 /* End Main Grid CSS */
-
 /* Header CSS */
 header {
   background-color: #7477bf;
@@ -41,23 +33,19 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 .header-left {
   margin-right: 2rem;
   padding-left: .8rem;
 }
-
 .header-right-container {
   display: flex;
   align-items: center;
   margin-right: .5rem;
 }
-
 .unbold {
   font-weight: 100;
   color: white;
 }
-
 .bell {
   width: 35px;
   height: 35px;
@@ -65,26 +53,67 @@ header {
   border-right: 1px solid silver;
   padding-right: .5rem;
 }
-
 .header-img-circle {
   border-radius: 50%;
   width: 55px;
   height: 55px;
   padding: 0 .5rem 0 1rem;
 }
-
 .header-txt-space {
   font-size: large;
   color: white;
   white-space: wrap;
 }
-
 .popup-container {
   display: none;
 }
-
 /* End Header CSS */
-
+/* Bell CSS */
+.bell svg {
+  transition: all .6s;
+}
+.bell svg:hover {
+  fill: #00ff00;
+  transform: scale(1.1);
+}
+.bell:hover {
+  cursor: pointer;
+}
+circle {
+  fill: #00ff00;
+  transition: all .6s;
+}
+.bell:hover circle {
+  fill: red;
+}
+.popup-container {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+}
+.popup li {
+  border-radius: 5px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  background-color: #dcdcdc;
+  position: relative;
+  width: 200px;
+}
+.close-bell-message {
+  position: absolute;
+  top: 20%;
+  right: 7%;
+  padding: 2px;
+}
+.close-bell-message:hover {
+  cursor: pointer;
+  background-color: red;
+  transition: all .8s;
+  border-radius: 3px;
+}
+/* End Bell CSS */
 /* Nav CSS */
 nav {
   display: flex;
@@ -94,22 +123,18 @@ nav {
   background-color: #4d4c72;
   height: 7vh;
 }
-
 nav a {
   width: 35px;
   height: 35px;
   fill: white;
 }
-
 /* End Nav CSS */
-
 /* Dashboard CSS */
 .dashboard {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-
 .dashboard-search {
   height: 50%;
   flex-basis: 100%;
@@ -118,11 +143,9 @@ nav a {
   padding: 15px;
   border-bottom-left-radius: 5px;
 }
-
 .dashboard-title {
   margin: 15px;
 }
-
 #search {
   padding: 5px;
   width: 90%;
@@ -130,9 +153,7 @@ nav a {
   border: none;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
-
 /* End Dashboard CSS */
-
 /* Alert CSS */
 .alert-window {
   position: relative;
@@ -144,38 +165,31 @@ nav a {
   color: #fff;
   text-align: center;
 }
-
 .alert-window p {
   width: 90%;
-  color: #fff
+  color: #fff 
 }
-
 .alert-close {
   position: absolute;
   right: 0;
   top: 25%;
-  margin: auto 10px;
+  margin: .5em 2em 1em 0;
   cursor: pointer;
 }
-
 /* End Alert CSS */
-
 /* Buttons Traffic CSS*/
 .buttons-traffic {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .buttons-traffic-list {
   display: flex;
   justify-content: center;
 }
-
 .traffic-title {
   margin: 15px;
 }
-
 .buttons-traffic-link {
   padding: 10px;
   margin-left: 10px;
@@ -183,62 +197,47 @@ nav a {
   transition: all 0.5s;
   border-radius: 5px;
 }
-
 .buttons-traffic-link:hover {
   background-color: #7DCD8A;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
-
 .buttons-traffic-link:active {
   background-color: #7DCD8A;
   transition: all 0.6s;
 }
-
 .active {
   background-color: #7DCD8A;
 }
-
 /* End Buttons Traffic CSS*/
-
 /* Begin Socials CSS */
-.social-container-twitter,
-.social-container-facebook,
-.social-container-google {
+.social-container-twitter, .social-container-facebook, .social-container-google {
   display: flex;
   align-items: flex-end;
   width: 80%;
   margin: 15px auto;
-  background-color: #eeeeee;
+  background: rgba(204, 204, 204, 0.5);
   border: 1px solid #eeeeee;
   border-radius: 5px;
   padding: 10px;
 }
-
 .socials-icon {
   margin: auto;
   transition: all .5s;
 }
-
 .socials-icon:hover {
   transform: scale(1.1);
 }
-
 .facebook {
   width: 55px;
   height: 55px;
 }
-
-.twitter,
-.google {
+.twitter, .google {
   width: 35px;
   height: 35px;
 }
-
-.social-image-twitter,
-.social-image-google,
-.social-image-facebook {
+.social-image-twitter, .social-image-google, .social-image-facebook {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,65 +248,52 @@ nav a {
   margin-left: 4em;
   margin-bottom: 1em;
 }
-
 .social-text {
   margin-left: 15px;
-
 }
-
 .name-social {
   font-weight: bold;
   color: #7279C0;
 }
-
 .number-social {
   font-size: 2em;
 }
-
-.name-social,
-.number-social {
+.name-social, .number-social {
   letter-spacing: 0.1em;
 }
-
 /* End Socials CSS */
-
 /* Begin Members CSS */
-.members img,
-.recent-activity img {
+.members img, .recent-activity img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
   margin: auto;
 }
-
-.members-container,
-.activity-container {
+.members-container, .activity-container {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
   padding: 15px;
   text-align: center;
+  border: 2px solid rgba(211, 211, 211, 0.6);
+  border-radius: 5px;
+  background: rgba(204, 204, 204, 0.5);
 }
-
 .members-container a {
   font-size: 0.8em;
 }
-
 .members-date {
   text-align: center;
   margin: auto;
   padding-top: .5em;
 }
-
 .activity-container {
   position: relative;
 }
-
 .activity-text {
   width: 90%;
 }
-
 .arrow {
   position: absolute;
   top: 25%;
@@ -316,7 +302,6 @@ nav a {
   color: #7279C0;
   font-weight: bold;
 }
-
 /* End Members CSS */
 /* Begin message user and settings CSS*/
 .settings-container, .message-user-form {
@@ -537,116 +522,121 @@ input:checked + .slider .off {
   font-weight: bold;
 }
 /* End message user and settings CSS*/
-
 .buttons-traffic-list {
   padding-left: 0;
 }
-/*tablet*/
-@media (min-width: 766px) {
-  .buttons-traffic {
-    flex-direction: row;
-    justify-content: space-between;
+@media (min-width: 376px) {
+  .popup-container {
+    position: absolute;
+    top: 1%;
   }
-
-  .buttons-traffic-list {
-    justify-content: flex-end;
-  }
-
-  .grid-container {
-    display: block;
-  }
-
-  nav {
-    position: fixed;
-    top: 79.68px;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    flex-direction: column;
-    padding: 0 12px;
-    justify-content: flex-start;
-  }
-
-  nav a {
-    margin-top: 24px;
-  }
-
-  header.header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+  .close-bell-message {
+    position: absolute;
     top: 0;
   }
-
+  .close-bell-message:hover {
+    cursor: pointer;
+    background-color: red;
+    transition: all .8s;
+    border-radius: 3px;
+  }
+}
+/*Tablet*/
+@media (min-width: 766px) {
+  .buttons-traffic {
+      flex-direction: row;
+      justify-content: space-between;
+ }
+  .buttons-traffic-list {
+      justify-content: flex-end;
+ }
+  .grid-container {
+      display: block;
+ }
+  nav {
+      position: fixed;
+      top: 79.68px;
+      left: 0;
+      bottom: 0;
+      height: 100vh;
+      flex-direction: column;
+      padding: 0 12px;
+      justify-content: flex-start;
+ }
+  nav a {
+      margin-top: 24px;
+ }
+  header.header {
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      top: 0;
+ }
   main.grid-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 76px;
-    margin-top: 110px;
-    width: calc(100% - 90px);
-  }
-
-  .dashboard,
-  div#alert,
-  section.traffic,
-  .social-container,
-  section.socials,
-  section.members,
-  section.recent-activity {
-    width: 100%;
-  }
-
-  section.daily,
-  section.mobile-users {
-    width: 50%;
-  }
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 76px;
+      margin-top: 110px;
+      width: calc(100% - 90px);
+ }
+  .dashboard, div#alert, section.traffic, .social-container, section.socials, section.members, section.recent-activity {
+      width: 100%;
+ }
+  section.daily, section.mobile-users {
+      width: 50%;
+ }
   .social-container {
-    display: flex;
-  }
-
+      display: flex;
+ }
   .social-container > div {
-    max-width: 29%;
-  }
-
-  .members-container,
-  .activity-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
+      max-width: 29%;
+ }
+  .members-container, .activity-container {
+      flex-direction: row;
+      justify-content: space-between;
+ }
   .members-text {
-    flex: 1;
-    height: 84.8px;
-    text-align: left;
-    margin-left: 24px;
-  }
-
-  .social-image-twitter,
-  .social-image-google,
-  .social-image-facebook {
-    margin-left: 1rem;
-  }
-
+      flex: 1;
+      height: 84.8px;
+      text-align: left;
+      margin-left: 24px;
+ }
+  .social-image-twitter, .social-image-google, .social-image-facebook {
+      margin-left: 1rem;
+ }
   .number-social {
-    font-size: 1.5em;
-  }
+      font-size: 1.5em;
+ }
   .widget-container-half{
-    height: calc(100% - 58px);
-    display: flex;
-    align-items: center;
-  }
+      height: calc(100% - 58px);
+      display: flex;
+      align-items: center;
+ }
+ .popup-container {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
 }
 /*desktop*/
 @media (min-width: 1200px) {
-
-  section.members,
-  section.recent-activity {
-    width: 48%;
-  }
-
+  section.members, section.recent-activity {
+      width: 48%;
+ }
   .social-container > div {
-    max-width: 30%;
-  }
+      max-width: 30%;
+ }
+  section.settings {
+      margin: auto;
+ }
+  .social-container-twitter, .social-container-google, .social-container-facebook {
+      display: flex;
+      justify-content: center;
+ }
+ .popup-container {
+  position: absolute;
+  left: 68%;
+  top: 90%;
+}
 }
