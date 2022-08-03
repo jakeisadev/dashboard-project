@@ -541,6 +541,9 @@ input:checked + .slider .off {
     transition: all .8s;
     border-radius: 3px;
   }
+  .arrow {
+    visibility: hidden;
+  }
 }
 /*Tablet*/
 @media (min-width: 768px) {
@@ -619,6 +622,26 @@ input:checked + .slider .off {
   left: 50%;
   top: 90%;
 }
+  section.message-user,
+  section.settings {
+    width: 100%;
+  }
+  .settings-container {
+    width: 100%;
+    margin: auto;
+  }
+  .move-arrow {
+    display: flex;
+  }
+  .arrow {
+    font-size: 1.5rem;
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
+  .arrow {
+    visibility: visible;
+  }
 }
 /*desktop*/
 @media (min-width: 1024px) {
@@ -639,5 +662,12 @@ input:checked + .slider .off {
   position: absolute;
   left: 68%;
   top: 90%;
-}
+  }
+  section.message-user,
+  section.settings {
+    width: 50%;
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
 }
