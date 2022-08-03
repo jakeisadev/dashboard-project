@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 /* Begin Main Grid CSS*/
 .grid-container {
   display: grid;
@@ -27,6 +30,9 @@ section {
 }
 /* End Main Grid CSS */
 /* Header CSS */
+main {
+  padding-left: .5rem;
+}
 header {
   background-color: #7477bf;
   display: flex;
@@ -125,8 +131,9 @@ nav {
 }
 nav a {
   width: 35px;
-  height: 35px;
+  /* height: 35px; */
   fill: white;
+  margin: 10px;
 }
 /* End Nav CSS */
 /* Dashboard CSS */
@@ -562,13 +569,13 @@ input:checked + .slider .off {
       top: 79.68px;
       left: 0;
       bottom: 0;
-      height: 100vh;
+      height: 100%;
       flex-direction: column;
       padding: 0 12px;
       justify-content: flex-start;
  }
   nav a {
-      margin-top: 24px;
+      margin: 10px;
  }
   header.header {
       position: fixed;
